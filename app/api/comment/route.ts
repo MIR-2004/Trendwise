@@ -27,12 +27,6 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     
-    // In a real app, you would:
-    // 1. Validate the request body
-    // 2. Check authentication
-    // 3. Save to database
-    // 4. Return the created comment
-    
     const newComment = {
       id: Date.now().toString(),
       ...body,
